@@ -1,0 +1,9 @@
+name: PrintingPress
+main: com.cowboys.printingpress.Main
+version: 1.0
+permissions:
+  printingpress.normaluse:
+    description: Use the printing press normally.
+  printingpress.freeuse:
+    description: Use the printing press without any items costs.
+    default: false
