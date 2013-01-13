@@ -1,9 +1,13 @@
 name: PrintingPress
 main: com.cowboys.printingpress.Main
-version: 1.0
+version: 1.1
 permissions:
   printingpress.normaluse:
     description: Use the printing press normally.
+    default: true
+  printingpress.clearinguse:
+    description: Use the printing press to clear books.
+    default: true
   printingpress.freeuse:
     description: Use the printing press without any items costs.
     default: false
