@@ -11,3 +11,6 @@ permissions:
   printingpress.freeuse:
     description: Use the printing press without any items costs.
     default: false
+  printingpress.bypassauthor:
+    description: Can copy others' books, regardless of the config setting.
+    default: false

@@ -74,6 +74,8 @@ public class Main extends JavaPlugin
 		if (Language.makeLangIfNotExist("English")) getLogger().info("Created language file for 'English'");
 		if (Language.makeLangIfNotExist("Portugese")) getLogger().info("Created language file for 'Portugese'");
 		if (Language.makeLangIfNotExist("Spanish")) getLogger().info("Created language file for 'Spanish'");
+		if (Language.makeLangIfNotExist("German")) getLogger().info("Created language file for 'German'");
+		if (Language.makeLangIfNotExist("French")) getLogger().info("Created language file for 'French'");
 	}
 
 	public void getValues()

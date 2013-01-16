@@ -72,12 +72,12 @@ public class Utility {
 		{
 			if (player.getItemInHand() == null)
 			{
-				Language.msg(player, M.lang.RightClickWithNormalBook);
+				Language.msg(player, M.lang.LeftClickWithNormalBook);
 				return false;
 			}
 			if (player.getItemInHand().getType() != Material.BOOK)
 			{
-				Language.msg(player, M.lang.RightClickWithNormalBook);
+				Language.msg(player, M.lang.LeftClickWithNormalBook);
 				return false;
 			}
 		}
@@ -177,7 +177,7 @@ public class Utility {
 		//Check author is the same:
 		BookMeta m = (BookMeta) I.getItem(0).getItemMeta();
 		
-		if (!m.getAuthor().equalsIgnoreCase(player.getName()) && M.conf.MustBeAuthor)
+		if (!m.getAuthor().equalsIgnoreCase(player.getName()) && M.conf.MustBeAuthor && !player.hasPermission("printingpress.bypassauthor"))
 		{
 			Language.msg(player, M.lang.MustBeAuthor);
 			return;

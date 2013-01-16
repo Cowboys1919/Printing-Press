@@ -28,7 +28,7 @@ public class Language
 	String DontHavePermissionToClearEnchantedBooks;
 	String BookCleared;
 	String PistonWrongWay;
-	String RightClickWithNormalBook;
+	String LeftClickWithNormalBook;
 	String TooHungry;
 	String NotEnoughItems;
 	String ItemsNeeded;
@@ -50,7 +50,7 @@ public class Language
 		c.set("DontHavePermissionToClearEnchantedBooks", "");
 		c.set("BookCleared", "");
 		c.set("PistonWrongWay", "");
-		c.set("RightClickWithNormalBook", "");
+		c.set("LeftClickWithNormalBook", "");
 		c.set("TooHungry", "");
 		c.set("NotEnoughItems", "");
 		c.set("ItemsNeeded", "");
@@ -69,6 +69,10 @@ public class Language
 			return makePortugese();
 		if (s.equals("Spanish") && !(new File(getLanguageFileName(s))).exists())
 			return makeSpanish();
+		if (s.equals("German") && !(new File(getLanguageFileName(s))).exists())
+			return makeGerman();
+		if (s.equals("French") && !(new File(getLanguageFileName(s))).exists())
+			return makeFrench();
 			
 		
 		return false;
@@ -87,7 +91,7 @@ public class Language
 		c.set("DontHavePermissionToClearEnchantedBooks", "You don't have permission to clear enchanted books.");
 		c.set("BookCleared", "Book cleared.");
 		c.set("PistonWrongWay", "The piston is not facing the right way.");
-		c.set("RightClickWithNormalBook", "Right click the printing press with a normal book.");
+		c.set("LeftClickWithNormalBook", "Left click the printing press with a normal book.");
 		c.set("TooHungry", "You are too hungry.");
 		c.set("NotEnoughItems", "You don't have enough resources.");
 		c.set("ItemsNeeded", "Items needed: ");
@@ -108,7 +112,7 @@ public class Language
 		c.set("DontHavePermissionToClearEnchantedBooks", "Não tens permissão para remover texto de livros encantados");
 		c.set("BookCleared", "O texto do livro foi removido.");
 		c.set("PistonWrongWay", "O pistão não está virado para o lado correcto.");
-		c.set("RightClickWithNormalBook", "Click direito na Copiadora com um livro normal.");
+		c.set("LeftClickWithNormalBook", "Click esquerdo na Copiadora com um livro normal.");
 		c.set("TooHungry", "Tens demasiada fome.");
 		c.set("NotEnoughItems", "Não tens os items necessários.");
 		c.set("ItemsNeeded", "Items necessários: ");
@@ -129,7 +133,7 @@ public class Language
 		c.set("DontHavePermissionToClearEnchantedBooks", "No tienes permiso para borrar libros encantados.");
 		c.set("BookCleared", "Texto eliminado.");
 		c.set("PistonWrongWay", "El pistón no está en la posición correcta.");
-		c.set("RightClickWithNormalBook", "Clic derecho en la imprenta con un libro normal.");
+		c.set("LeftClickWithNormalBook", "Clic izquierda en la imprenta con un libro normal.");
 		c.set("TooHungry", "Tienes demasiado hambre.");
 		c.set("NotEnoughItems", "No tienes suficientes items.");
 		c.set("ItemsNeeded", "Items necesarios: ");
@@ -138,7 +142,50 @@ public class Language
 		
 		return saveLanguage(c, "Spanish");
 	}
+	private static boolean makeGerman()
+	{
+		FileConfiguration c = new YamlConfiguration();
+		
+		c.set("PrintingPressCreated", "Druckerpresse erstellt!");
+		c.set("BookCopied", "Buch \"%\" kopiert.");
+		c.set("DontHavePermission", "Du hast nicht die Erlaubnis, um diese Druckerpresse zu benutzen!");
+		c.set("DontHavePermissionToClear", "Du hast nicht die Erlaubnis, um den Inhalt von Büchern mithilfe der Druckerpresse zu löschen!");
+		c.set("DontHavePermissionToClearWrittenBooks", "Du hast nicht die Erlaubnis, um den Inhalt signierter Bücher zu löschen.");
+		c.set("DontHavePermissionToClearEnchantedBooks", "Du hast nicht die Erlaubnis, um den Inhalt verzauberter Bücher zu löschen.");
+		c.set("BookCleared", "Buchinhalt gelöscht.");
+		c.set("PistonWrongWay", "Der Kolben zeigt nicht in die richtige Richtung.");
+		c.set("LeftClickWithNormalBook", "Mach einen Linksklick auf die Druckerpresse mit einem normalen Buch.");
+		c.set("TooHungry", "Du bist zu hungrig.");
+		c.set("NotEnoughItems", "Du hast nicht genug Rohstoffe.");
+		c.set("ItemsNeeded", "Rohstoffe, die du brauchst: ");
+		c.set("WrittenBookInFirstSlot", "Platziere ein beschriebenes Buch in den ersten Platz deiner Aktionsleiste.");
+		c.set("MustBeAuthor", "Du musst der Autor dieses Buches sein, um es zu kopieren!");
+		
+		return saveLanguage(c, "German");
+	}
 	
+	private static boolean makeFrench()
+	{
+		FileConfiguration c = new YamlConfiguration();
+		
+		c.set("PrintingPressCreated", "Imprimante créée!");
+		c.set("BookCopied", "Le livre \"%\" est copié.");
+		c.set("DontHavePermission", "Vous n'avez pas les permissions nécessaires pour utiliser une imprimante!");
+		c.set("DontHavePermissionToClear", "Vous n'avez pas les permissions nécessaires pour effacer un livre!");
+		c.set("DontHavePermissionToClearWrittenBooks", "Aucune permission pour effacer un livre écrit.");
+		c.set("DontHavePermissionToClearEnchantedBooks", "Aucune permission pour effacer un livre enchanté.");
+		c.set("BookCleared", "Livre effacé.");
+		c.set("PistonWrongWay", "Le piston n'est pas dans le bon sens.");
+		c.set("LeftClickWithNormalBook", "Clic gauche sur l'imprimante avec un bloc normal.");
+		c.set("TooHungry", "Vous avez trop faim.");
+		c.set("NotEnoughItems", "Vous n'avez pas assez de ressources.");
+		c.set("ItemsNeeded", "Objets requis: ");
+		c.set("WrittenBookInFirstSlot", "Placez un livre écrit dans la première case de votre inventaire.");
+		c.set("MustBeAuthor", "Vous devez autre auteur du livre pour copier le livre!");
+		
+		
+		return saveLanguage(c, "French");
+	}
 	
 	//Utilities:
 	private static String getLanguageFileName(String s)
@@ -179,7 +226,7 @@ public class Language
 		l.DontHavePermissionToClearEnchantedBooks = c.getString("DontHavePermissionToClearEnchantedBooks");
 		l.BookCleared = c.getString("BookCleared");
 		l.PistonWrongWay = c.getString("PistonWrongWay");
-		l.RightClickWithNormalBook = c.getString("RightClickWithNormalBook");
+		l.LeftClickWithNormalBook = c.getString("LeftClickWithNormalBook");
 		l.TooHungry = c.getString("TooHungry");
 		l.NotEnoughItems = c.getString("NotEnoughItems");
 		l.ItemsNeeded = c.getString("ItemsNeeded");
