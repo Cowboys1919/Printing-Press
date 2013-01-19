@@ -2,28 +2,29 @@ package com.cowboys.printingpress;
 
 import java.util.ArrayList;
 
-import net.minecraft.server.v1_4_6.LocaleLanguage;
+import net.minecraft.server.v1_4_R1.LocaleLanguage;
 
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.material.PistonBaseMaterial;
-import org.bukkit.craftbukkit.v1_4_6.entity.CraftPlayer;
-import org.bukkit.craftbukkit.v1_4_6.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_4_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_4_R1.inventory.CraftItemStack;
 
-
-public class Utility {
+public class Utility
+{
 	//Method checked to see if String S is a valid number
 	public static boolean isNumber(String s)  
 	{  
 		try  
-		{  
+		{
 			@SuppressWarnings("unused")
 			int i = Integer.parseInt(s);
 		}  
@@ -231,7 +232,6 @@ public class Utility {
 	@SuppressWarnings("deprecation")
 	public static void playerClearBook(Player player, Block clickedBlock, PistonBaseMaterial block)
 	{
-
 		Main M = Main.getPl();
 		PlayerInventory I = player.getInventory();
 		
@@ -277,4 +277,25 @@ public class Utility {
 		
 		player.updateInventory();
 	}
+
+
+	public static boolean checkProtection(Main M, PlayerInteractEvent E)
+	{
+		if (M.conf.DisableOnFactionLand)
+			if (M.factionsPlugin != null)
+				if (!M.factionsPlugin.isPlayerAllowedToBuildHere(E.getPlayer(), E.getClickedBlock().getLocation()))
+				{
+					Language.msg(E.getPlayer(), M.lang.DisableOnFactionOrWorldGuardLand);
+					return false;
+				}
+		if (M.conf.DisableOnWorldGuardLand)
+			if (M.worldguardPlugin != null)
+				if (!M.worldguardPlugin.canBuild(E.getPlayer(), E.getClickedBlock()))
+				{
+					Language.msg(E.getPlayer(), M.lang.DisableOnFactionOrWorldGuardLand);
+					return false;
+				}
+		return true;
+	}
+
 }

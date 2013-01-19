@@ -19,15 +19,17 @@ public class EventListener implements Listener
 	{
 		M = Main.getPl();
 	}
-
+	
 	@EventHandler(priority = EventPriority.NORMAL)
 	public void onPlayerInteract(PlayerInteractEvent E)
-	{
+	{	
 		if (E.getClickedBlock() == null || E.getPlayer().getItemInHand() == null)
 			return;
 		
 		if (E.getClickedBlock().getType() == M.conf.PressBlock && E.getAction() == Action.LEFT_CLICK_BLOCK && E.getClickedBlock().getRelative(0, 2, 0).getType() == Material.PISTON_BASE)
 		{
+			if (!Utility.checkProtection(M, E)) return;
+			
 			PistonBaseMaterial piston = new PistonBaseMaterial(Material.PISTON_BASE, E.getClickedBlock().getRelative(0, 2, 0).getData());
 			if (E.getPlayer().getItemInHand().getType() == Material.BOOK)
 				Utility.playerPrintBook(E.getPlayer(), E.getClickedBlock(), piston);

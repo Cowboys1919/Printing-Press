@@ -1,0 +1,15 @@
+PrintingPressCreated:Printing press created!
+BookCopied:Book "%" copied.
+DontHavePermission:You don't have permission to use the printing press!
+DontHavePermissionToClear:You don't have permission to clear books with the printing press!
+DontHavePermissionToClearWrittenBooks:You don't have permission to clear written books.
+DontHavePermissionToClearEnchantedBooks:You don't have permission to clear enchanted books.
+BookCleared:Book cleared.
+PistonWrongWay:The piston is not facing the right way.
+LeftClickWithNormalBook:Left click the printing press with a normal book.
+TooHungry:You are too hungry.
+NotEnoughItems:You don't have enough resources.
+ItemsNeeded:Items needed:
+WrittenBookInFirstSlot:Place a written book in the first slot in your inventory.
+MustBeAuthor:You must be the author of the book to copy it!
+DisableOnFactionOrWorldGuardLand:You can't use this printing press, it is on claimed land.

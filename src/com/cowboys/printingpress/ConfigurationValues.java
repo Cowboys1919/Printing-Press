@@ -16,4 +16,6 @@ public class ConfigurationValues
 	public ArrayList<ItemStack> clearingCosts;
 	public boolean CanClearWrittenBooks;
 	public boolean CanClearEnchantedBooks;
+	public boolean DisableOnFactionLand;
+	public boolean DisableOnWorldGuardLand;
 }

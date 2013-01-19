@@ -1,0 +1,15 @@
+PrintingPressCreated:Copiadora criada!
+BookCopied:Livro "%" copiado.
+DontHavePermission:Não tens permissão para usar a Copiadora!
+DontHavePermissionToClear:Não tens permissão para remover o texto com a Copiadora!
+DontHavePermissionToClearWrittenBooks:Não tens permissão para remover o texto do livro!
+DontHavePermissionToClearEnchantedBooks:Não tens permissão para remover texto de livros encantados
+BookCleared:O texto do livro foi removido.
+PistonWrongWay:O pistão não está virado para o lado correcto.
+LeftClickWithNormalBook:Click esquerdo na Copiadora com um livro normal.
+TooHungry:Tens demasiada fome.
+NotEnoughItems:Não tens os items necessários.
+ItemsNeeded:Items necessários:
+WrittenBookInFirstSlot:Coloca o livro escrito no primeiro espaço do teu inventário.
+MustBeAuthor:Tens que ser o autor do livro para copiá-lo.
+DisableOnFactionOrWorldGuardLand:Não podes utilizar a Copiadora porque está em area reclamada.

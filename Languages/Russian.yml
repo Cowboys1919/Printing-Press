@@ -1,0 +1,15 @@
+PrintingPressCreated:печатный станок создан!
+BookCopied:книжка "%" скопирована.
+DontHavePermission:у вас нету разрешения использовать печатный станок!
+DontHavePermissionToClear:у вас нету разрешения очищать книги печатным станком!
+DontHavePermissionToClearWrittenBooks:у вас нету разрешения очищать написанные книги.
+DontHavePermissionToClearEnchantedBooks:у вас нету разрешения очищать заколдованные книги.
+BookCleared:книга очищена.
+PistonWrongWay:Поршень не направлённый в правильное направление.
+LeftClickWithNormalBook:Щелкните левой кнопкой мыши печатный станок с обычной книгой.
+TooHungry:Вы сильно голодные.
+NotEnoughItems:у вас не хватает ресурсов.
+ItemsNeeded:Предметы необходимые:
+WrittenBookInFirstSlot:положите написанную книгу в ваш первый слот в вашем инвентари.
+MustBeAuthor:вы должны быть авторам книги чтобы копировать её!
+DisableOnFactionOrWorldGuardLand:вы не можете использовать печатный станок, он не находится на земле утвержденной.

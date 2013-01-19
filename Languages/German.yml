@@ -1,0 +1,15 @@
+PrintingPressCreated:Druckerpresse erstellt!
+BookCopied:Buch "%" kopiert.
+DontHavePermission:Du hast nicht die Erlaubnis, um diese Druckerpresse zu benutzen!
+DontHavePermissionToClear:Du hast nicht die Erlaubnis, um den Inhalt von BŸchern mithilfe der Druckerpresse zu lšschen!
+DontHavePermissionToClearWrittenBooks:Du hast nicht die Erlaubnis, um den Inhalt signierter BŸcher zu lšschen.
+DontHavePermissionToClearEnchantedBooks:Du hast nicht die Erlaubnis, um den Inhalt verzauberter BŸcher zu lšschen.
+BookCleared:Buchinhalt gelšscht.
+PistonWrongWay:Der Kolben zeigt nicht in die richtige Richtung.
+LeftClickWithNormalBook:Mach einen Linksklick auf die Druckerpresse mit einem normalen Buch.
+TooHungry:Du bist zu hungrig.
+NotEnoughItems:Du hast nicht genug Rohstoffe.
+ItemsNeeded:Rohstoffe, die du brauchst:
+WrittenBookInFirstSlot:Platziere ein beschriebenes Buch in den ersten Platz deiner Aktionsleiste.
+MustBeAuthor:Du musst der Autor dieses Buches sein, um es zu kopieren!
+DisableOnFactionOnWorldGuardLand:Du kannst die Druckerpresse nicht benutzen, denn sie befindet sich auf besetztem Territorium.

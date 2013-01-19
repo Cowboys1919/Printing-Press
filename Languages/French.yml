@@ -1,0 +1,15 @@
+PrintingPressCreated:Imprimante créée!
+BookCopied:Le livre "%" est copié.
+DontHavePermission:Vous n'avez pas les permissions nécessaires pour utiliser une imprimante!
+DontHavePermissionToClear:Vous n'avez pas les permissions nécessaires pour effacer un livre!
+DontHavePermissionToClearWrittenBooks:Aucune permission pour effacer un livre écrit.
+DontHavePermissionToClearEnchantedBooks:Aucune permission pour effacer un livre enchanté.
+BookCleared:Livre effacé.
+PistonWrongWay:Le piston n'est pas dans le bon sens.
+LeftClickWithNormalBook:Clic gauche sur l'imprimante avec un bloc normal.
+TooHungry:Vous avez trop faim.
+NotEnoughItems:Vous n'avez pas assez de ressources.
+ItemsNeeded:Objets requis:
+WrittenBookInFirstSlot:Placez un livre écrit dans la première case de votre inventaire.
+MustBeAuthor:Vous devez autre auteur du livre pour copier le livre!
+DisableOnFactionOrWorldGuardLand:Vous ne pouvez pas utiliser l'imprimante. C'est sur des terres revendiquées.
