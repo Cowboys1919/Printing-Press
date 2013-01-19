@@ -71,6 +71,7 @@ public class Main extends JavaPlugin
 		
 		//Default values
 		defaults.put("Player.HungerLost", 3);
+		defaults.put("Player.MustBeAuthor", true);
 
 		defaults.put("Protection.DisableOnFactionLand", false);
 		defaults.put("Protection.DisableOnWorldGuardLand", false);
